@@ -1,0 +1,48 @@
+<!--maryaamah-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Count Down</title>
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Container -->
+  <div class="container">
+   <div class="wrapper">
+    <h2 class="caption"></h2>
+     <div class="time-wrap">
+       <div class="days"> 
+         <span id="days_left"></span> 
+         <span id="days">days</span>
+       </div>
+       <div class="hours">
+         <span id="hr_left"></span>
+         <span id="hr">hours</span>
+       </div>
+       <div class="mins">
+         <span id="mins_left"></span>
+         <span id="mins">minutes</span>
+       </div>
+       <div class="secs">
+         <span id="secs_left"></span>
+         <span id="secs">seconds</span>
+       </div>
+     </div>
+     <!-- Count-Down Input -->
+     <div class="countInpBtn">
+       <input type="text" id="captInp" class="countCapt" placeholder="Enter your caption here...">
+       <button class="btn">Start Count
+         <input type="date" id="userDate" class="dateInput"> 
+       </button>
+     </div>
+   </div>
+  </div>
+ 
+  <!-- Script -->
+  <script src="main.js"></script>
+</body>
+</html>

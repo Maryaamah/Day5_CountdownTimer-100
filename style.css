@@ -1,0 +1,119 @@
+/maryaamah/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom right,#72C94A,#DF3030);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.wrapper {
+  width: 100%;
+  box-sizing: content-box;
+  padding: 10px 5px 150px;
+}
+.caption {
+  font-family: Verdana, Geneva, Tahoma, monospace, sans-serif;
+  font-size: 1.85em;
+  font-weight: 600;
+  text-align: center;
+  color: #CD2C2C;
+  padding-bottom: 10px;
+}
+.time-wrap {
+  width: 100%;
+  display: grid;
+  grid-gap: 7.5px;
+  grid-template-columns: repeat(4,1fr); 
+}
+.time-wrap div {
+  height: 75px;
+  background: transparent;
+   font-family: Verdana, Geneva, Tahoma, monospace, sans-serif;
+  font-size: 1.55em;
+  font-weight: 400;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: inset 1px 1px 2px #E9E9E9;
+}
+.time-wrap div:nth-child(even) {
+  transform: translateY(75px);
+  box-shadow: inset -1px -1px 2px #E9E9E9;
+}
+.time-wrap div span#days,
+.time-wrap div span#hr,
+.time-wrap div span#mins,
+.time-wrap div span#secs{
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.countInpBtn {
+  width: 350px;
+  height: 40px;
+  position: relative;
+  background: #525BC6;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); 
+  border-radius: 20px;
+  overflow-x: hidden;
+}
+input[type='text'] {
+  width: 280px;
+  height: 40px;
+  font-size: 1.1em;
+  position: absolute;
+  left: 0;
+  padding: 5px 40px 5px 10px;
+  border: none;
+  border-radius: 15px;
+  outline: none;
+}
+.countInpBtn button {
+  width: 120px;
+  height: 40px;
+  font-size: 1.08em;
+  font-weight: 450;
+  background: #DF3030;
+  position: absolute;
+  right: 0;
+  padding-left: 20px;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+input[type='date'] {
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+input[type='date']::-webkit-calendar-picker-indicator {
+  width: 100px;
+  height: 40px; 
+  background: red;
+  cursor: pointer;
+}
